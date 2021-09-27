@@ -1,0 +1,258 @@
+version: "2.0"
+
+intents:
+  - greet-en
+  - greet-fr
+  - goodbye-en
+  - goodbye-fr
+  - affirm-en
+  - affirm-fr
+  - deny-en
+  - deny-fr
+  - bot_challenge-en
+  - bot_challenge-fr
+  - contact-en
+  - contact-fr
+  - admission-req-en
+  - admission-req-fr
+  - join-li-en
+  - join-li-fr
+  - 3A3B-diff-en
+  - 3A3B-diff-fr
+  - how-admission-en
+  - how-admission-fr
+  - when-admission-en
+  - when-admission-fr
+  - major-en
+  - major-fr
+  - how-finance-en
+  - how-finance-fr
+  - how-much-en
+  - how-much-fr
+  - how-pay-en
+  - how-pay-fr
+  - mobility-en
+  - mobility-fr
+  - work-study-en
+  - work-study-fr
+  - evening-class-en
+  - evening-class-fr
+  - email-complaint-en
+  - email-complaint-fr
+  - interview-reschedule-en
+  - interview-reschedule-fr
+  - major-type-en
+  - major-type-fr
+  - major-info-en
+  - major-info-fr
+  - no-response-interview-en
+  - no-response-interview-fr
+  - internatinal-degree-en
+  - internatinal-degree-fr
+entities:
+  - major
+actions:
+  - action_major_type_en
+  - action_major_type_fr
+  - action_major_info_en
+  - action_major_info_fr
+responses:
+  ##English
+  utter_greet_en:
+    - text: "Hey! How can can i help you?"
+  utter_contact_en:
+    - text: "You can contact 70 685 685 or by email: contact@ esprit.tn"
+  utter_ask_help_en:
+    - text: "If you have another question, I am at your disposal."
+  utter_wait_question_en:
+    - text: "Okay, what do you want to know?"
+  utter_goodbye_en:
+    - text: "Until next time"
+  utter_iamabot_en:
+    - text: "I am a bot assistant, i can help you if you have a question about Esprit. You can ask me a question in either English or French and i will try my best to provide you with an answer"
+  utter_admission_req_en:
+    - text: "In the 1st year: holders of a scientific, economic, technical or equivalent baccalaureate.\n
+             In 2nd year: students who have successfully completed a first year in a preparatory institute for engineering studies or in an integrated preparatory cycle. \ N
+             In 3rd year (course A): students holding a bachelor's degree in the chosen major.\n
+             In the 3rd year (course B): students holding a general bachelor's degree in science or technology / Students declared admitted to the main list or to the complementary list to national exams for access to engineering studies (MP, PC, Techno ).\n
+             In 4th year: candidates who have validated a Master (M1) in the chosen major. "
+  utter_join_li_en:
+    - text: "You can integrate ESPRIT in 3rd year A"
+  utter_3A3B_diff_en:
+    - text: "3A: students with a bachelor in the chosen major enter ESPRIT in 3A.\n
+          3B: students with a general bachelor in science or technology / Students declared admitted to the
+            main list or to the complementary list to national exams for access to engineering studies (MP, PC, Techno)."
+  utter_how_admission_en:
+    - text: "For the 2020/2021 academic year, the entrance examination will be conducted entirely online. \ N
+     1. Welcome meeting: welcome meeting led by the deputy general manager via the Google Meet application during
+     which there will be a presentation of the school followed by a question and answer session. \ n
+     2. Admission interview: motivational oral interview lasting 20 minutes in front of an online committee
+     through a Google Meet meeting. During the interview, the candidate will answer comprehension questions
+     of the two texts chosen from among the six texts received during the pre-registration (3 texts in French and 3 texts in English) "
+  utter_when_admission_en:
+    - text: "Admission schedule: \n
+            1st session: from 05/17 to 06/03 \n
+            2nd session: from 06/03 to 07/29 \n
+            3rd session: from 07/29 to 08/08"
+  utter_major_en:
+    - text: "ESPRIT engineer offers 4 majors: IT, telecommunications, civil engineering and electromechanics"
+  utter_how-finance_en:
+    - text: "You can pay the costs of your education in 2 installments: \n
+             1st tranche (3850 TND) within the limits limited in the admission confirmation and the 2nd tranche (3500 TND)
+             before January 15 of the current school year. \n
+             Ease of payment is possible. (Check details with finance)"
+  utter_how-much_en:
+    - text: "7350 DT for Tunisian students (daily class) \n
+     6200DT to students not supported by a company \n
+     7200 DT for Tunisian students (evening classes) \n
+     3000 € for foreign students."
+
+  utter_how-pay_en:
+    - text: "By bank transfer: We accept bank transfers. \n
+     Please make your payment to our bank account: ESPRIT \n
+     bank: AMEN BANK \n
+     Raoued agency \n
+     RIB: 07 035 0020 101 10136691 \n
+     Online payment \n
+     Payment by check"
+
+  utter_mobility_en:
+    - text: "During the 4th year, students are notified by email of the selection procedures. \n
+       Departure to a partner university can only be done through the school procedure. \n
+       Financial aid can be obtained which will help the student to bring their project to fruition."
+
+  utter_work-study_en:
+    - text: "This new course only concerns holders of a bachelor's degree in computer science or a related specialty. \n
+     In fact, ESPRIT offers you in addition to the classic courses during the day or evening course, the possibility of integrating
+     work-study training with one of the partner companies. \n
+     The candidates selected in this context will benefit from: \n
+     -An education of 4 years alternating between ESPRIT and the partner company. \n
+     -A hiring contract with the partner company and consequent advantages. \n
+     - Support for eduction costs by the partner company. \n
+     The final registration conditions in this program are: \n
+     academic admission to ESPRIT and the signing of a contract with the partner company."
+
+  utter_evening-class_en:
+    - text: "You can register for an evening class if you hold a scientific or technical bachelor.
+     (duration of studies: 4 years). \n
+     The engineering education at ESPRIT during the evening is a progressive course of 4 years post-graduate studies
+     with two possible entries. \n
+    The hourly load is weekly from 2 p.m. (Monday to Friday from 6.30 p.m. to 8.30 p.m. and Saturday from 2 p.m. to 6 p.m.)
+    and this for 10 months / year."
+
+  utter_email-complaint_en:
+    - text : "You can send your complaint to the email address: reclamation.admission2021@esprit.tn"
+
+  utter_interview-reschedule_en:
+    - text: "You can change the date of your interview on the website."
+
+  utter_no-response-interview_en:
+    - text: "Don't worry, we will reach out to you. If a problem still persist, you can contact us by calling 70 685 685 or by email: reclamation.admission2021@esprit.tn"
+
+  utter_internatinal-degree_en:
+    - text: "The International Degree Program is a program that will entirely and exclusively be conducted in English. It provides English-language instruction in an English-speaking environment, i.e., by adopting an English-language curriculum.\n
+    To learn more, please visit: https://esprit.tn/InternationalDegreeProgram"
+  ## Francais
+  utter_greet_fr:
+    - text : "Bonjour, comment je peux vous aider?"
+  utter_contact_fr:
+    - text: "Vous pouvez contacter 70 685 685 ou par mail: contact@esprit.tn"
+  utter_ask_help_fr:
+    - text: "Si vous avez une autre question je suis à votre écoute."
+  utter_wait_question_fr:
+    - text : "D'accord, que ce que vus voullez savoir?"
+  utter_goodbye_fr:
+    - text: "A la prochaine."
+  utter_iamabot_fr:
+    - text: "Je suis un bot assistant, je peux vous aider si vous avez une question sur Esprit. Vous pouvez me poser une question en Anglais ou en Français et je ferai de mon mieux pour vous fournir une réponse"
+  utter_admission_req_fr:
+    - text: "En 1ère année: les titulaires d’un baccalauréat scientifique, économique, technique ou équivalent.\n
+            En 2ème année : les étudiants ayant accompli avec succès une première année dans un institut préparatoire aux études d’ingénieur ou dans un cycle préparatoire intégré.\n
+            En 3ème année (cursus A) : les étudiants titulaires d’une licence dans la spécialité choisie.\n
+            En 3ème année (cursus B) : les étudiants titulaires d’une licence généraliste en sciences ou en technologies / Les étudiants déclarés admis en liste principale ou en liste complémentaire aux concours nationaux d’accès aux études d’ingénieur (MP, PC, Techno).\n
+            En 4ème année : les candidats ayant validé un Master (M1) dans la spécialité choisie."
+  utter_join_li_fr:
+    - text: "Vous pouvez intégrer ESPRIT en 3ème année A"
+  utter_3A3B_diff_fr:
+    - text: "3A:  les étudiants titulaires d’une licence dans la spécialité choisie intègrent ESPRIT en 3A.\n
+          3B: les étudiants titulaires d’une licence généraliste en sciences ou en technologies / Les étudiants déclarés admis
+             en liste principale ou en liste complémentaire aux concours nationaux d’accès aux études d’ingénieur (MP, PC, Techno)."
+  utter_how_admission_fr:
+    - text: "Pour la rentrée universitaire 2020/2021, le concours d’admission se déroulera entièrement en ligne.\n
+    1.Réunion d’accueil : réunion d’accueil animée par le directeur général adjoint via l’application Google Meet durant
+    laquelle il y aura une présentation de l’école suivie d’une séance de questions/réponses.\n
+    2. Entretien d’admission : entretien oral de motivation d’une durée de 20 min devant une commission en ligne
+    à travers une réunion Google Meet . Durant l’entretien, le candidat répondra à des questions de compréhension
+    des deux textes choisis parmi les six textes reçus lors de la préinscription ( 3 textes en français et 3 textes en anglais)"
+  utter_when_admission_fr:
+    - text: "Le calendrier d'admission: \n
+             1ère session: du 17/05 au 03/06 \n
+             2ème session: du 03/06 au 29/07 \n
+             3ème session: du 29/07 au 08/08"
+  utter_major_fr:
+    - text: "ESPRIT ingénieur propose 4 spécialités: informatique, télécommunication, génie civil et électromécanique"
+  utter_how-finance_fr:
+    - text: "Vous pouvez payer les frais de votre formation sur 2 tranches: \n
+             1ère tranche (3850 DT) dans les limites indiquées dans la confirmation d'admission et la 2ème tranche (3500 DT)
+             avant le 15 Janvier de l'année scolaire en cours. \n
+             La facilité de paiement est possible .( vérifier les détails avec le service financier)"
+  utter_how-much_fr:
+    - text : "7350 DT  pour les étudiants Tunisiens (cours du jour) \n
+    6200DT aux étudiants non pris en charge par une entreprise \n
+    7200 DT pour les étudiants tunisiens (cours de soir) \n
+    3000 € pour les étudiants étrangers."
+  utter_how-pay_fr:
+    - text: "Par virement bancaire: Nous acceptons les virements bancaires. \n
+    Veuillez effectuer votre paiement à notre compte bancaire :ESPRIT \n
+    banque : AMEN BANK \n
+    Agence raoued \n
+    RIB : 07 035 0020 101 10136691 \n
+    Paiement en ligne \n
+    Paiement par chèque"
+
+  utter_mobility_fr:
+    - text: "Au cours de la 4ème année, les élèves sont avertis par mail des procédures de sélection. \n
+    Le départ vers une université partenaire ne peut se faire qu’à travers la procédure de l’école. \n
+    Des aides financières peuvent être obtenues qui aideront l’étudiant à faire aboutir son projet."
+
+  utter_work-study_fr:
+    - text: "Ce nouveau parcours concerne uniquement les titulaires d’une licence en informatique ou dans une spécialité apparentée. \n
+    En effet, ESPRIT vous offre en plus des filières classiques en cours de jour ou cours du soir, la possibilité d’intégrer
+    une formation en alternance avec l’une des entreprises partenaires. \n
+    Les candidats retenus dans ce cadre bénéficieront :\n
+    -D'une formation de 4 années alternés entre ESPRIT et l'entreprise partenaire. \n
+    -D'un contrat d'embauche avec l'entreprise partenaire et des avantages conséquents. \n
+    -D'une prise en charge des frais de formation par l'entreprise partenaire.  \n
+    Les conditions d'inscription définitives dans ce programme sont: \n
+    l'admission académique au concours d'ESPRIT et la signature d'un contrat avec l'entreprise partenaire."
+
+  utter_evening-class_fr:
+    - text: "Vous pouvez vous inscrire en cours de soir si vous etes  titulaire d'une licence scientifique ou technique
+    (durée des études : 4 ans). \n
+    La formation d’ingénieur à ESPRIT en cours de soir  est un cursus progressif de 4 années d’études post licence avec deux
+    entrées possibles .\n
+    La charge horaire est hebdomadaire est de 14h ( du Lundi au Vendredi de 18h30 à 20h30 et le Samedi de 14h à 18h)
+    et ceci durant 10 mois/an."
+
+  utter_email-complaint_fr:
+    - text: "Vous pouvez envoyer votre réclamation à l'adresse mail : reclamation.admission2021@esprit.tn"
+
+  utter_interview-reschedule_fr:
+    - text: "Vous pouvez modifier la date de votre entretien sur site ."
+
+  utter_no-response-interview_fr:
+    - text: "Pas de crainte, on vous contactera prochainement. Ci unle probleme est persistant, vous pouvez nous contacter par en appelant le 70 685 685 ou par email: reclamation.admission2021@esprit.tn"
+
+  utter_internatinal-degree_fr:
+    - text: "Le programme de diplôme international est un programme qui se déroulera entièrement et exclusivement en anglais. Il dispense un enseignement en anglais dans un environnement anglophone, c'est-à-dire en adoptant un programme d'études en anglais.\n
+     Pour en savoir plus, veuillez visiter : https://esprit.tn/InternationalDegreeProgram"
+
+
+
+  ##Rephrase
+  utter_please_rephrase:
+    - text: "Sorry, I didn't quite understand that, could you rephrase it?\n
+    Je suis désolé, je n'ai pas bien compris. Pourriez-vous reformuler ?"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

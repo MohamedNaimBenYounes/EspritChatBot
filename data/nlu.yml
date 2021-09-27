@@ -1,0 +1,365 @@
+version: "2.0"
+
+nlu:
+##English
+- intent: greet-en
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye-en
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: affirm-en
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny-en
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge-en
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - what are you
+    - how can you help me
+    - who are you
+
+- intent: contact-en
+  examples: |
+    - who should be contacted for further information on admission
+    - who should I contact to obtain additional information on admission
+    - how can I find out more
+    - who I should contact for more information
+    - I want to have more information
+    - I want to contact you
+    - I want your contacts
+- intent : admission-req-en
+  examples: |
+    -What are the conditions for admission to the Esprit Engineer day course program?
+    -How can I integrate Esprit Engineer day course program?
+    -I want to know about the conditions of admission to the Esprit engineer day course program
+
+- intent : join-li-en
+  examples: |
+    -In what year can I integrate ESPRIT with a bachelor's degree in computer science?
+    -I have a bachelor's degree in computer science, how can I integrate Esprit?
+- intent : 3A3B-diff-en
+  examples: |
+    - What is the difference between 3A and 3B?
+    -Is there a difference between 3A and 3B?
+    -What are the different courses available in 3rd year?
+- intent: how-admission-en
+  examples: |
+    -How is the admission exam?
+    -How's the admission exam is help?
+    -What are the stages of admission?
+- intent: when-admission-en
+  examples: |
+    -When it is possible to pre-register on the site
+    -When can I join Esprit?
+    -When does the amdission start?
+    -When does the amdission start?
+    -What are the dates of admission
+    -when are admission held
+
+- intent: major-en
+  examples: |
+    -What majors are available?
+    -Tell me about the majors available?
+    -Are there several majors available?
+- intent: how-finance-en
+  examples: |
+    -how do i finance my education
+    -are there any method for ease of payment
+- intent: how-much-en
+  examples: |
+    -What is the total cost of the education?
+    -How much does the education cost?
+    -How much does it cost a year at Esprit?
+    -Price
+    -What is the price
+    -Fees
+    Inscription fees
+- intent: how-pay-en
+  examples: |
+    -What are the payment terms?
+    -Tell me about the payment terms?
+    -How can I pay the fees?
+- intent: mobility-en
+  examples: |
+    -The possibility of having an international experience
+    -Is it possible to continue my studies abroad?
+    -Are there opportunities to study abroad?
+- intent: work-study-en
+  examples: |
+    -How can I register for work-study progam?
+    -Tell me about work-study program
+    -Is there the possibility of integrating work-study program?
+
+- intent: evening-class-en
+  examples: |
+    -Can I have details about the evening course?
+    -I want to inquire about the evening course
+    -Tell me about the evening class
+
+
+
+- intent: email-complaint-en
+  examples: |
+    -I did not receive a pre-registration confirmation email
+    -I have not yet received an admission email
+
+- intent: interview-reschedule-en
+  examples: |
+    -I want to postpone my interview.
+    -I want to delay my interview
+    -I want to reschedule my interview
+
+- intent: major-type-en
+  examples: |
+    - What specialities are available in
+    - What are the specialities in 4th year in
+    - What are the specialities in
+    - Tell me about the specialities in
+    - Tell me about the options in
+    - What are the specialities in
+    - What specialities are available in
+    - What are the options in
+    - Are there any options in
+    - Are there any specialities in
+    - Tell me about the specialities available in
+    - Tell me about the specialities available in 4th year in
+    - What options are available in 4th year in
+    - What specialities are available in 4th year in
+    - What are the options in 4th year in
+
+- intent: major-info-en
+  examples: |
+    - What is the option
+    - Tell me about the option
+    - I want to know details about the option
+    - The option consists of what
+
+- intent: no-response-interview-en
+  examples: |
+    - I had an interview on and still didn't get a response
+    - I am on the waiting list and still no response
+    - I don't know if i am accpeted or not
+
+- intent : internatinal-degree-en
+  examples : |
+    - What is the International Degree Program
+    - Tell me abou the International Degree Program
+## Francais
+- intent: greet-fr
+  examples: |
+    - bonjour
+    - salut
+    - bonsoir
+    - yo
+    - salutation
+    - bon après midi
+    - bonne après midi
+    - bon après-midi
+    - bonne après-midi
+    - bon apres midi
+    - bonne apres midi
+    - bon apres-midi
+    - bonne apres-midi
+- intent: goodbye-fr
+  examples: |
+    - a+
+    - a plus
+    - bonne journée
+    - bonne journee
+    - bonne nuit
+    - ciao
+    - allez ciao
+    - bye
+    - a la prochaine
+    - à la prochaine
+- intent: affirm-fr
+  examples: |
+    - oui
+    - effectivement
+    - evidamment
+    - bien sur
+    - d'accord
+    - o
+    - super
+- intent: deny-fr
+  examples: |
+    - non
+    - jamais
+    - je ne pense pas
+    - impossible
+    - n
+    - j'aime pas ca
+    - j aime pas
+- intent: bot_challenge-fr
+  examples: |
+    - Etes-vous un robot?
+    - Êtes-vous un être humain?
+    - est-ce que je parle à un bot ?
+    - est-ce que je parle à un humain ?
+    - Qu'es-tu
+    - comment pouvez vous m'aider
+    - qui es-tu
+
+- intent: contact-fr
+  examples: |
+    - qui doit-on contacter pour obtenir des informations complémentaires sur l’admission
+    - qui doit je contacter pour obtenir des informations complémentaires sur l’admission
+    - comment je peux me renseigner de plus
+    - a qui je doit m'adresser pour avoir plus d'informations
+    - je veux avoir plus d'informations
+    - je veux vous contacter
+    - je veux vos contacts
+- intent: admission-req-fr
+  examples: |
+    -Quelles sont les conditions d’admission au programme Esprit ingénieur cours de jour?
+    -Comment je peux intéger Esprit en cours de jour?
+    -Je veux savoir a propos des condition d'admisiion au programme Esprit ingénieur cours de jour
+- intent: join-li-fr
+  examples: |
+    -En quelle année je peux intégrer ESPRIT avec une licence en informatique?
+    -J'ai une licence en informatique, comment je peux intégerer Esprit?
+- intent: 3A3B-diff-fr
+  examples: |
+    -Quelle est la différence entre 3A et 3B ?
+    -Y'a-t-il une différence entre 3A et 3B?
+    -Quels sont le différents cursus diponible en 3éme année?
+
+- intent: how-admission-fr
+  examples: |
+    -Comment se déroule le concours d'admission?
+    -Comment ca se passe le concous d'admission?
+    -Quelle sont les etapes d'admission?
+- intent : when-admission-fr
+  examples: |
+    -Quand est qu'on peut faire la préinscription sur le site
+    -Quand est ce que je peux m'inscire a Esprit?
+    -Quand est ce que le concours d'amdission commence?
+    -Quand est ce que commence le concours d'amdission?
+    -Coucours d'admission c'est quand
+    -Quels sont les dates d'admission
+- intent: major-fr
+  examples: |
+    -Quels sont les spécialités disponibles?
+    -Parlez moi des spécialités disponibles?
+    -Y'a-t-il plusieurs specialités diponible?
+- intent: how-finance-fr
+  examples: |
+    -Comment financer ma formation ?
+    -Y'a-t-il des facilités de paiments?
+- intent: how-much-fr
+  examples: |
+    -Quel est le coût total de la formation?
+    -Combien ca coute la formation?
+    -Combien ca coute une année à Esprit?
+    -Prix
+    -C'est quoi le prix
+    -Fraits d'inscription
+    -Fraits
+- intent: how-pay-fr
+  examples: |
+    -Quels sont les modalités de paiement?
+    -Parlez moi des modalités de paiments?
+    -Comment je peux payer les frais?
+- intent : mobility-fr
+  examples: |
+    -La possibilité d’avoir une expérience à l’international
+    -Est-il possible de continuer mes etudes à l'etanger?
+    -Y a-t-il des opportuités d'etudier à l'etranger?
+- intent: work-study-fr
+  examples: |
+    -Comment je peux m'inscrire à la formation en alternance?
+    -Parlez moi de la formation en alternance
+    -Y'a-t-il possbilité d'intéger une formation en alternance?
+- intent: evening-class-fr
+  examples: |
+    -Puis-je avoir des  détails concernant le cours de soir?
+    -Je veux me renseiger du cours du soir
+    -Parlez moi du cours du soir
+- intent: email-complaint-fr
+  examples: |
+    -Je n'ai pas reçu un mail de confirmation de préinscription
+    -Je n'ai pas encore recu un mail d'admission
+
+- intent: interview-reschedule-fr
+  examples: |
+    - Je veux reporter mon entretien.
+    - Je veux retarder mon entretien
+    - Je veux reprogrammer mon entretien
+- intent: major-type-fr
+  examples: |
+    - Quelles sont les specialités disponibles en
+    - Qulles sont les specialités en 4eme annee en
+    - C'est quoi les specialités en
+    - Parlez moi des options en
+    - Qulles sont les options en
+    - Quelles sont les options disponibles en
+    - C'est quoi les options en
+    - Y'a-t-il des options en
+    - Y'a-t-il des spécialités en
+    - Parlez moi des spécialités disponibles en
+    - Parlez moi des spécialités disponibles en 4eme annee en
+    - Quelles sont les options disponibles en 4eme année en
+    - Quelles sont les options en 4eme année en
+
+- intent: major-info-fr
+  examples: |
+    - C'est quoi l'option
+    - Parlez moi de l'option
+    - Je veux savoir des details a propos de l'option
+    - L'option consiste en quoi
+
+- intent: no-response-interview-fr
+  examples: |
+    - J'ai passer mon entretien et j'ai pas encore recu de retour
+    - Je suis en liste d'attente
+    - Je sais pas ci je suis accpete ou pas encore
+
+- intent : internatinal-degree-fr
+  examples : |
+    - C'est quoi le classe internationnale
+    - En quoi consiste la classe internationnale
+    - Parlez moi de la classe internationnale

@@ -1,0 +1,576 @@
+version: "2.0"
+
+stories:
+
+- story: happy path-en
+  steps:
+  - intent: greet-en
+  - action: utter_greet_en
+- story: ask contact-en yes
+  steps:
+    - intent: contact-en
+    - action: utter_contact_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: ask contact-en no
+  steps:
+    - intent: contact-en
+    - action: utter_contact_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+- story: admission req-en yes
+  steps:
+    - intent: admission-req-en
+    - action: utter_admission_req_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: admission req-en no
+  steps:
+    - intent: admission-req-en
+    - action: utter_admission_req_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+- story: join li-en yes
+  steps:
+    - intent: join-li-en
+    - action: utter_join_li_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: join li-en no
+  steps:
+    - intent: join-li-en
+    - action: utter_join_li_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+- story: 3A3B diff-en yes
+  steps:
+    - intent: 3A3B-diff-en
+    - action: utter_3A3B_diff_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: 3A3B diff-en no
+  steps:
+    - intent: 3A3B-diff-en
+    - action: utter_3A3B_diff_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+- story: how admission-en yes
+  steps:
+    - intent: how-admission-en
+    - action: utter_how_admission_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: how admission-en no
+  steps:
+    - intent: how-admission-en
+    - action: utter_how_admission_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+- story: when admission-en yes
+  steps:
+    - intent: when-admission-en
+    - action: utter_when_admission_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: when admission-en no
+  steps:
+    - intent: when-admission-en
+    - action: utter_when_admission_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+- story: major-en yes
+  steps:
+    - intent: major-en
+    - action: utter_major_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: major-en no
+  steps:
+    - intent: major-en
+    - action: utter_major_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+- story: how-finance-en yes
+  steps:
+    - intent: how-finance-en
+    - action: utter_how-finance_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: how-finance-en no
+  steps:
+    - intent: how-finance-en
+    - action: utter_how-finance_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+- story: how-much-en yes
+  steps:
+    - intent: how-much-en
+    - action: utter_how-much_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: how-much-en no
+  steps:
+    - intent: how-much-en
+    - action: utter_how-much_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: how-pay-en yes
+  steps:
+    - intent: how-pay-en
+    - action: utter_how-pay_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: how-pay-en no
+  steps:
+    - intent: how-pay-en
+    - action: utter_how-pay_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: mobility-en yes
+  steps:
+    - intent: mobility-en
+    - action: utter_mobility_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: mobility-en no
+  steps:
+    - intent: mobility-en
+    - action: utter_mobility_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: work-study-en yes
+  steps:
+    - intent: work-study-en
+    - action: utter_work-study_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: work-study-en no
+  steps:
+    - intent: work-study-en
+    - action: utter_work-study_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: evening-class-en yes
+  steps:
+    - intent: evening-class-en
+    - action: utter_evening-class_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: evening-class-en no
+  steps:
+    - intent: evening-class-en
+    - action: utter_evening-class_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: email-complaint-en yes
+  steps:
+    - intent: email-complaint-en
+    - action: utter_email-complaint_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: email-complaint-en no
+  steps:
+    - intent: email-complaint-en
+    - action: utter_email-complaint_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: interview-reschedule-en yes
+  steps:
+    - intent: interview-reschedule-en
+    - action: utter_interview-reschedule_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: interview-reschedule-en no
+  steps:
+    - intent: interview-reschedule-en
+    - action: utter_interview-reschedule_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: major-type-en yes
+  steps:
+    - intent: major-type-en
+    - action: action_major_type_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: major-type-en no
+  steps:
+    - intent: major-type-en
+    - action: action_major_type_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: major-info-en yes
+  steps:
+    - intent: major-info-en
+    - action: action_major_info_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: major-info-en no
+  steps:
+    - intent: major-info-en
+    - action: action_major_info_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: no-response-interview-en yes
+  steps:
+    - intent: no-response-interview-en
+    - action: utter_no-response-interview_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: no-response-interview-en no
+  steps:
+    - intent: no-response-interview-en
+    - action: utter_no-response-interview_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+- story: internatinal-degree-en yes
+  steps:
+    - intent: internatinal-degree-en
+    - action: utter_internatinal-degree_en
+    - action: utter_ask_help_en
+    - intent: affirm-en
+    - action: utter_wait_question_en
+- story: internatinal-degree-en no
+  steps:
+    - intent: internatinal-degree-en
+    - action: utter_internatinal-degree_en
+    - action: utter_ask_help_en
+    - intent: deny-en
+    - action: utter_goodbye_en
+
+##Francais
+- story: happy path-fr
+  steps:
+    - intent: greet-fr
+    - action: utter_greet_fr
+- story: ask contact-fr yes
+  steps:
+    - intent: contact-fr
+    - action: utter_contact_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: ask contact-fr no
+  steps:
+    - intent: contact-fr
+    - action: utter_contact_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+- story: admission req-fr yes
+  steps:
+    - intent: admission-req-fr
+    - action: utter_admission_req_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: admission req-fr no
+  steps:
+    - intent: admission-req-fr
+    - action: utter_admission_req_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+- story: join li-fr yes
+  steps:
+    - intent: join-li-fr
+    - action: utter_join_li_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: join li-fr no
+  steps:
+    - intent: join-li-fr
+    - action: utter_join_li_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+- story: 3A3B diff-fr no
+  steps:
+    - intent: 3A3B-diff-fr
+    - action: utter_3A3B_diff_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+- story: 3A3B diff-fr yes
+  steps:
+    - intent: 3A3B-diff-fr
+    - action: utter_3A3B_diff_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+
+- story: how admission-fr yes
+  steps:
+    - intent: how-admission-fr
+    - action: utter_how_admission_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: how admission-fr no
+  steps:
+    - intent: how-admission-fr
+    - action: utter_how_admission_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+- story: when admission-fr yes
+  steps:
+    - intent: when-admission-fr
+    - action: utter_when_admission_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: when admission-fr no
+  steps:
+    - intent: when-admission-fr
+    - action: utter_when_admission_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+- story: major-fr yes
+  steps:
+    - intent: major-fr
+    - action: utter_major_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: major-fr no
+  steps:
+    - intent: major-fr
+    - action: utter_major_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: how-finance-fr yes
+  steps:
+    - intent: how-finance-fr
+    - action: utter_how-finance_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: how-finance-fr no
+  steps:
+    - intent: how-finance-fr
+    - action: utter_how-finance_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: how-much-fr yes
+  steps:
+    - intent: how-much-fr
+    - action: utter_how-much_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: how-much-fr no
+  steps:
+    - intent: how-much-fr
+    - action: utter_how-much_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: how-pay-fr yes
+  steps:
+    - intent: how-pay-fr
+    - action: utter_how-pay_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: how-pay-fr no
+  steps:
+    - intent: how-pay-fr
+    - action: utter_how-pay_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: mobility-fr yes
+  steps:
+    - intent: mobility-fr
+    - action: utter_mobility_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: mobility-fr no
+  steps:
+    - intent: mobility-fr
+    - action: utter_mobility_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: work-study-fr yes
+  steps:
+    - intent: work-study-fr
+    - action: utter_work-study_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: work-study-fr no
+  steps:
+    - intent: work-study-fr
+    - action: utter_work-study_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: evening-class-fr yes
+  steps:
+    - intent: evening-class-fr
+    - action: utter_evening-class_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: evening-class-fr no
+  steps:
+    - intent: evening-class-fr
+    - action: utter_evening-class_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: email-complaint-fr yes
+  steps:
+    - intent: email-complaint-fr
+    - action: utter_email-complaint_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: email-complaint-fr no
+  steps:
+    - intent: email-complaint-fr
+    - action: utter_email-complaint_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: interview-reschedule-fr yes
+  steps:
+    - intent: interview-reschedule-fr
+    - action: utter_interview-reschedule_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: interview-reschedule-fr no
+  steps:
+    - intent: interview-reschedule-fr
+    - action: utter_interview-reschedule_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: major-type-fr yes
+  steps:
+    - intent: major-type-fr
+    - action: action_major_type_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: major-type-fr no
+  steps:
+    - intent: major-type-fr
+    - action: action_major_type_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: major-info-fr yes
+  steps:
+    - intent: major-info-fr
+    - action: action_major_info_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: major-info-fr no
+  steps:
+    - intent: major-info-fr
+    - action: action_major_info_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: no-response-interview-fr yes
+  steps:
+    - intent: no-response-interview-fr
+    - action: utter_no-response-interview_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: no-response-interview-fr no
+  steps:
+    - intent: no-response-interview-fr
+    - action: utter_no-response-interview_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+- story: internatinal-degree-fr yes
+  steps:
+    - intent: internatinal-degree-fr
+    - action: utter_internatinal-degree_fr
+    - action: utter_ask_help_fr
+    - intent: affirm-fr
+    - action: utter_wait_question_fr
+- story: internatinal-degree no
+  steps:
+    - intent: internatinal-degree-fr
+    - action: utter_internatinal-degree_fr
+    - action: utter_ask_help_fr
+    - intent: deny-fr
+    - action: utter_goodbye_fr
+
+
+#- story: goodbye_fr
+#  steps:
+#    - intent: goodbye-fr
+#    - action: utter_goodbye_fr
+
